@@ -28,6 +28,11 @@ $(function () {
     $('#triggerItWrong').trigger('click');
   });
   
+  //$.browser doesn't exist!
+  $('button.addMoreStuff').bind('click', function () {
+    console.log($.browser);
+  });
+  
   //live goes bye bye
   $('#addNewThings').bind('click', function () {
     $('#allTheThings').append('<div class="oneThing">Yay a thing!' + $('.oneThing').length + '</div>');
