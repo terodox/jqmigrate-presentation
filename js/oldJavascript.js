@@ -32,7 +32,7 @@ $(function () {
   $('#addNewThings').bind('click', function () {
     $('#allTheThings').append('<div class="oneThing">Yay a thing!' + $('.oneThing').length + '</div>');
   });
-  $('#allTheThings').delegate('.oneThing', 'click', function () {
+  $('#allTheThings .oneThing').live('click', function () {
     console.log($(this).text());
   });
 });

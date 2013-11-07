@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/oldJavascript.js"></script>
+  </head>
+  <body>
+    <div class="oldJavascript">
+      <form role="form">
+        <div class="form-group">
+          <label for="allEyesOnMe">.focus() is out of order!</label>
+          <input type="text" class="form-control" id="allEyesOnMe" value="" />
+        </div>
+        <div class="form-group">
+          <label for="getSomeFocus">blur event then focus right?</label>
+          <input type="text" class="form-control" id="getSomeFocus" value="" />
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" id="checkItOut" value="1" />
+            <span>.attr() vs .prop()</span>
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" id="triggerItWrong" value="1" />
+            <span>.trigger("click") is wonky.</span>
+          </label>
+          <button type="button" class="btn btn-default" id="triggerClick">Trigger a click on checkbox</button>
+        </div>
+        <div class="form-group">
+          <button type="button" class="btn btn-primary addMoreStuff" tebindex="1">Submit This Thing</button>
+        </div>
+      </form>
+      <div>
+        <h4>Here's .delegate() in action <small>.live() is similar too</small></h4>
+        <button class="btn btn-default" id="addNewThings">Add A New Thing</button>
+        <div class="moreStuffContainer" id="allTheThings">
+          
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
